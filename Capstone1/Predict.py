@@ -23,7 +23,6 @@ Algo = st.selectbox(
     ('xgBoost','RandomForest',' Linear Regression'))
 
 Accuracy = st.button('Accuracy')
-st.write("Input Parameters:")
 
 #Accuracy
 
@@ -56,7 +55,8 @@ if Accuracy:
 
         st.markdown('Accuracy: '+str(r2) + "%")
         pickle.dump(xgb_r, open('./model1.sav', 'wb'))
-        
+        st.write("Input Parameters:")
+
 #2.randomforest        
     elif Algo == 'RandomForest':
         
@@ -79,6 +79,8 @@ if Accuracy:
         st.markdown('Accuracy: '+str(r2) + "%")
         
         pickle.dump(rfregressor, open('./model2.sav', 'wb'))
+        st.write("Input Parameters:")
+
     
     
 #3. linear regression   
@@ -103,6 +105,8 @@ if Accuracy:
         st.markdown('Accuracy: '+str(r2) + "%")
         
         pickle.dump(lr, open('./model3.sav', 'wb'))
+        st.write("Input Parameters:")
+
         
      
 ################################################################################Prediction
