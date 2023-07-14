@@ -23,7 +23,7 @@ Algo = st.selectbox(
     ('xgBoost','RandomForest',' Linear Regression'))
 
 Accuracy = st.button('Accuracy')
-
+st.write("Input Parameters")
 
 #Accuracy
 
