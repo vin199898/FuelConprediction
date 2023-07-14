@@ -55,7 +55,7 @@ if Accuracy:
 
         st.markdown('Accuracy: '+str(r2) + "%")
         pickle.dump(xgb_r, open('./model1.sav', 'wb'))
-        st.write("Input Parameters:")
+        
 
 #2.randomforest        
     elif Algo == 'RandomForest':
@@ -113,6 +113,7 @@ if Accuracy:
 
 #########1.xgboost
 if Algo == "xgBoost":
+    st.write("Input Parameters:")
     model = pickle.load(open('model1.sav', 'rb'))
     def user_report():
         
