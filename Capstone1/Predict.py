@@ -139,7 +139,7 @@ if Algo == "xgBoost":
     user_data = user_report()
     
     
-    VoyageDistance = st.number_input('Voyage Distance', min_value = 0.0, max_value = 20000.0, value = 0.0, step = 0.1)
+    VoyageDistance = st.number_input('Voyage Distance(Nautical miles)', min_value = 0.0, max_value = 20000.0, value = 0.0, step = 0.1)
     
     
     
