@@ -169,6 +169,7 @@ if Algo == "xgBoost":
         
 ##############2.randomforest        
 elif Algo == 'RandomForest':
+    st.write("Input Parameters:")
     model2 = pickle.load(open('model2.sav', 'rb'))
     def user_report2():
         
@@ -215,6 +216,7 @@ elif Algo == 'RandomForest':
       
 ###############3.linear regression    
 else:
+    st.write("Input Parameters:")
     model3 = pickle.load(open('model3.sav', 'rb'))
     def user_report3():
         
