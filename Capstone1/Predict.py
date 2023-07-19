@@ -113,7 +113,8 @@ if Accuracy:
 ################################################################################Prediction
 
 #########1.xgboost
-if Algo == "xgBoost":
+if uploaded_file is df:
+  if Algo == "xgBoost":
     st.write("Input Parameters:")
     model = pickle.load(open('model1.sav', 'rb'))
     def user_report():
@@ -271,6 +272,8 @@ else:
        
         
   
+  
+
   
 
         
