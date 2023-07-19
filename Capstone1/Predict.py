@@ -105,12 +105,12 @@ if Accuracy:
         st.markdown('Accuracy: '+str(r2) + "%")
         
         pickle.dump(lr, open('./model3.sav', 'wb'))
-        st.write("Input Parameters:")
+        
 
         
      
 ################################################################################Prediction
-
+st.write("Input Parameters:")
 #########1.xgboost
 if Algo == "xgBoost":
     st.write("Input Parameters:")
