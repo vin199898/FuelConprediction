@@ -11,7 +11,7 @@ import pickle
 
 
 st.header('Predict Vessel Carbon Emission')
-uploaded_file = st.file_uploader("Upload noon report data (CSV Format:)")
+uploaded_file = st.file_uploader("Upload noon report data (CSV Format):")
 if uploaded_file is not None:
   df = pd.read_csv(uploaded_file)
   st.write(df)
