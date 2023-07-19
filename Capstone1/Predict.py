@@ -112,7 +112,8 @@ if Accuracy:
 ################################################################################Prediction
 
 #########1.xgboost
-if Algo == "xgBoost":
+if uploaded_file is not None:
+  if Algo == "xgBoost":
     st.write("Input Parameters:")
     model = pickle.load(open('model1.sav', 'rb'))
     def user_report():
@@ -262,6 +263,8 @@ else:
         st.subheader("Predicted  Voyage C02 Emission:  " + str(Total_carbon[0]) + ' Tonnes ')
        
         
+  
+
         
     
             
