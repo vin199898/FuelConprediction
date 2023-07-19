@@ -112,8 +112,7 @@ if Accuracy:
 ################################################################################Prediction
 
 #########1.xgboost
-if uploaded_file is not None:
-  if Algo == "xgBoost":
+if Algo == "xgBoost":
     st.write("Input Parameters:")
     model = pickle.load(open('model1.sav', 'rb'))
     def user_report():
@@ -166,11 +165,12 @@ if uploaded_file is not None:
         
         st.subheader("Predicted Voyage Fuel Consumption: " + str(Total_FC[0]) +' Tonnes ')
         st.subheader("Predicted  Voyage C02 Emission:  " + str(Total_carbon[0]) + ' Tonnes ')
+
+  
         
         
 ##############2.randomforest 
-if uploaded_file is not None:
-  elif Algo == 'RandomForest':
+elif Algo == 'RandomForest':
     st.write("Input Parameters:")
     model2 = pickle.load(open('model2.sav', 'rb'))
     def user_report2():
@@ -215,12 +215,14 @@ if uploaded_file is not None:
        
        st.subheader("Predicted Voyage Fuel Consumption: " + str(Total_FC[0]) +' Tonnes ')
        st.subheader("Predicted  Voyage C02 Emission:  " + str(Total_carbon[0]) + ' Tonnes ')
+
+  
       
   
 
 ###############3.linear regression  
-if uploaded_file is not None:
-  else:
+
+else:
     st.write("Input Parameters:")
     model3 = pickle.load(open('model3.sav', 'rb'))
     def user_report3():
@@ -267,6 +269,7 @@ if uploaded_file is not None:
         st.subheader("Predicted  Voyage C02 Emission:  " + str(Total_carbon[0]) + ' Tonnes ')
        
         
+  
   
 
         
