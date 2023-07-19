@@ -79,12 +79,13 @@ if Accuracy:
         st.markdown('Accuracy: '+str(r2) + "%")
         
         pickle.dump(rfregressor, open('./model2.sav', 'wb'))
-        st.write("Input Parameters:")
+        
 
     
     
 #3. linear regression   
     else:
+        
         TargetVariable='mainEngFO'
         #Predictors=['Draft','RelDirection','WindForce','disLOG','speedLOG']
         Predictors=['Draft','speedLOG','rpm','disLOG']
@@ -110,7 +111,7 @@ if Accuracy:
         
      
 ################################################################################Prediction
-st.write("Input Parameters:")
+
 #########1.xgboost
 if Algo == "xgBoost":
     st.write("Input Parameters:")
