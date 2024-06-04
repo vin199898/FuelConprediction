@@ -1,4 +1,4 @@
-import streamlit as st
+zimport streamlit as st
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
 from sklearn.ensemble import RandomForestRegressor
@@ -23,7 +23,7 @@ Algo = st.selectbox(
     ('xgBoost','RandomForest',' Linear Regression'))
 
 Accuracy = st.button('Accuracy')
-st.write(f"temprature: :red[{temperature}]")
+st.warning("Run accuracy button to disable error below")
 
 
 #Accuracy
