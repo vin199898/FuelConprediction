@@ -106,6 +106,11 @@ if Accuracy:
         st.markdown('Accuracy: '+str(r2) + "%")
         
         pickle.dump(lr, open('./model3.sav', 'wb'))
+
+
+st.write("Run Accuracy button if error message is present below")
+
+
         
 
         
