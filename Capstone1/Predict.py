@@ -23,7 +23,7 @@ Algo = st.selectbox(
     ('xgBoost','RandomForest',' Linear Regression'))
 
 Accuracy = st.button('Accuracy')
-st.warning("Run accuracy button to disable error below")
+st.warning("Run accuracy button if error is displayed below")
 
 
 #Accuracy
