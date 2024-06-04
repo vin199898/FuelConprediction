@@ -1,4 +1,4 @@
-zimport streamlit as st
+import streamlit as st
 from sklearn.model_selection import train_test_split
 import xgboost as xgb
 from sklearn.ensemble import RandomForestRegressor
