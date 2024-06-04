@@ -23,7 +23,8 @@ Algo = st.selectbox(
     ('xgBoost','RandomForest',' Linear Regression'))
 
 Accuracy = st.button('Accuracy')
-st.write("Run Accuracy button if error message is present below")
+st.write(f"temprature: :red[{temperature}]")
+
 
 #Accuracy
 
