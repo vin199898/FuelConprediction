@@ -130,7 +130,7 @@ if Algo == "xgBoost":
     
        
 
-      draft = st.number_input('Draft(M)', min_value = 0, max_value = 20.0, value = 2.0, step = 0.1)
+      draft = st.number_input('Draft(M)', min_value = 0.0, max_value = 20.0, value = 2.0, step = 0.1)
       speedLOG = st.number_input('Speed(Knots)', min_value = 0.0, max_value = 30.0, value = 0.0, step = 0.1)
       rpm = st.number_input('Engine Speed(RPM)', min_value = 0.0, max_value = 150.0, value = 0.0, step = 0.1)
       Distance = speedLOG*24
@@ -185,7 +185,7 @@ elif Algo == 'RandomForest':
         
         global speedLOG
         
-        draft = st.number_input('Draft(M)', min_value = 0, max_value = 20.0, value = 2.0, step = 0.1)
+        draft = st.number_input('Draft(M)', min_value = 0.0, max_value = 20.0, value = 2.0, step = 0.1)
         speedLOG = st.number_input('Speed(Knots)', min_value = 0.0, max_value = 30.0, value = 0.0, step = 0.1)
         rpm = st.number_input('Engine Speed(RPM)', min_value = 0.0, max_value = 150.0, value = 0.0, step = 0.1)
         Distance = speedLOG*24
@@ -237,7 +237,7 @@ else:
         
         global speedLOG
         
-        draft = st.number_input('Draft(M)', min_value = 0, max_value = 20.0, value = 2.0, step = 0.1)
+        draft = st.number_input('Draft(M)', min_value = 0.0, max_value = 20.0, value = 2.0, step = 0.1)
         speedLOG = st.number_input('Speed(Knots)', min_value = 0.0, max_value = 30.0, value = 0.0, step = 0.1)
         rpm = st.number_input('Engine Speed(RPM)', min_value = 0.0, max_value = 150.0, value = 0.0, step = 0.1)
         Distance = speedLOG*24
