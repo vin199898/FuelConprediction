@@ -23,6 +23,7 @@ Algo = st.selectbox(
     ('xgBoost','RandomForest',' Linear Regression'))
 
 Accuracy = st.button('Accuracy')
+st.write("Run Accuracy button if error message is present below")
 
 #Accuracy
 
@@ -108,7 +109,7 @@ if Accuracy:
         pickle.dump(lr, open('./model3.sav', 'wb'))
 
 
-st.write("Run Accuracy button if error message is present below")
+
 
 
         
