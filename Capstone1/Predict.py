@@ -20,7 +20,7 @@ if uploaded_file is not None:
 
 Algo = st.selectbox(
     'Select Algorithm',
-    ('xgBoost','RandomForest',' Linear Regression'))
+    ('RandomForest','xgBoost','Linear Regression'))
 
 Accuracy = st.button('Accuracy')
 st.warning("Run accuracy button if error is displayed below")
